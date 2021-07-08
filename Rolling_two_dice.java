@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class Rolling_two_dice{
 
@@ -6,6 +7,12 @@ class Rolling_two_dice{
         Random dicenum = new Random();
         int resultdice=0;
         int totalValue=0;
+        //名前パート
+        Scanner inputname = new Scanner(System.in);
+        System.out.println("What is your name");
+        String name = inputname.next();
+        System.out.println("Hello, "+name+"!");
+        //サイコロパート
         System.out.println("Rolling the dice...");
         for(int i = 1; i < 3; i++){
             resultdice = dicenum.nextInt(6);
