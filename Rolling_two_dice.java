@@ -22,6 +22,7 @@ class Rolling_two_dice{
         }
         System.out.println("Total value : "+totalValue);
         //判定
+        
         if(totalValue > 7){System.out.println(name+" won!");}
         else{System.out.println(name+" lost.");}
 
